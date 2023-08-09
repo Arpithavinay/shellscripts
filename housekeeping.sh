@@ -1,6 +1,5 @@
 #!/bin/bash
-
-
+#Housekepping Script
 SCRIPT_PATH="$HOME/dir_Arpitha/shellscripts/ARPI"
 TMP_LOC="/tmp/scripts"
 BUILD_LOC="/tmp/builds"

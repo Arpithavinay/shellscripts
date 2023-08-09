@@ -1,8 +1,5 @@
 #!/bin/bash
-
-
-
-
+#pattern checking script
 PATTERN=`grep -l -r "LINUX" *`
 
 

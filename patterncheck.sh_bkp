@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+#echo " Enter the file Name"
+ #read Name
+set -x
+FILES=`ls -lrt|awk -F " " '{print $NF}'`
+PATTERN=`grep -l "LINUX" $FILES`
+
+if [ -s "$PATTERN" ];
+then
+ echo " $PATTERN  "
+else
+	" files containing LINUX not found "
+fi

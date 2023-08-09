@@ -1,4 +1,4 @@
-#!/bin/bash
+i#!/bin/bash
 
 
 echo " Enter the file name"
@@ -10,7 +10,7 @@ read Name
 if [ -L  $Name ];
 then
         echo " The $Name is link "
-        ls -i $Name
+	ls -i $Name
 
 elif [ -f $Name ];
 then

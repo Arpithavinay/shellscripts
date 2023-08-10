@@ -1,5 +1,4 @@
 #!/bin/bash
-
 LOG_PATH=/tmp/buils
 
 cd "$LOG_PATH"

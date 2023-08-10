@@ -1,5 +1,4 @@
 #!/bin/bash
-#set -x
 
 SPACE=` df -h . | awk -F " " '{print $(NF-1)}'| tail -1 | sed "s/%//g" `
 

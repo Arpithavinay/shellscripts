@@ -1,6 +1,4 @@
 #!/bin/bash
-
-
 read -p "echo enter the ip address:" IP
 IFS='.'
 

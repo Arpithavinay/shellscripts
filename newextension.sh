@@ -1,16 +1,13 @@
 #!/bin/bash
 
-read -p "ENTER the path :" path
-FILES=`ls $path |  tail -n+1 |awk -F " " '{print $NF}'`
+sourcepath="/home/ec2-user/dir_Arpitha/Extension"
 
+for file in "$sourcepath"/*;
+do
+	if [ -f $file ];
+	then
+		new_file="${file}.new"
 
- for i in $FILES
- do 
-   if [ -f $i ];
-   then
-   mv $i $i.new
-   else
-    echo "No files is there"
-fi
-
+		mv "$file" "$new_file"
+	fi
 done

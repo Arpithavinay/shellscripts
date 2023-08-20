@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ $# -ne 1 ];
+then
+echo " ERROR: Please provide a number as a argument."
+
+fi
+
+number=$1
+
+while [ "$number" -gt 0 ]
+do
+remainder=$((number % 10 ))
+reversed_number="${reversed_number}${remainder}"
+number=$((number / 10))
+done
+
+
+echo "Reversed Number :$reversed_number"
